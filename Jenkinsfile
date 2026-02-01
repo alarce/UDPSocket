@@ -33,7 +33,7 @@ pipeline {
             steps {
                 echo 'Subiendo archivos al servidor de producción...'
                 // Esto hace que el archivo aparezca para descargar en la web
-                archiveArtifacts artifacts: 'mi_programa', fingerprint: true
+                archiveArtifacts artifacts: 'server/server_bin, client/client_bin', fingerprint: true
                 echo 'Despliegue finalizado con éxito.'
             }
         }
