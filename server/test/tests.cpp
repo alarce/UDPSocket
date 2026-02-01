@@ -2,7 +2,7 @@
 #include <iostream>
 #include <cassert>
 
-#include "server/include/util.h"
+#include "../include/util.h"
 
 
 int main() {
