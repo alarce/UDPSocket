@@ -10,10 +10,10 @@ pipeline {
         stage('Construcción (Build)') {
             steps {
                 echo 'Bajando el código del repositorio...'
-                dir('server'){
+                dir('server/src'){
                     sh 'g++ main.cpp -o ../server_bin'
                 }
-                dir('client'){
+                dir('client/src'){
                     sh 'g++ main.cpp -o ../client_bin'
                 }
                 
@@ -23,7 +23,9 @@ pipeline {
         stage('Pruebas (Test)') {
             steps {
                 echo 'Ejecutando pruebas unitarias...'
-                sh 'g++ test/tests.cpp -o test/ejecutable_tests && ./test/ejecutable_tests'
+                dir('test'){
+                    sh 'g++ tests.cpp -o ejecutable_tests && ./ejecutable_tests'
+                }
                 echo '¡Pruebas superadas!'
             }
         }
