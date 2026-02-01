@@ -10,7 +10,13 @@ pipeline {
         stage('Construcción (Build)') {
             steps {
                 echo 'Bajando el código del repositorio...'
-                sh 'g++ main.cpp -o programa_final'
+                dir('server'){
+                    sh 'g++ main.cpp -o ../server_bin'
+                }
+                dir('client'){
+                    sh 'g++ main.cpp -o ../client_bin'
+                }
+                
                 echo 'Compilación completada.'
             }
         }
