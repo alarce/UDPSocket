@@ -1,0 +1,55 @@
+{
+  "version": 3,
+  "configurePresets": [
+    {
+      "name": "windows-mingw",
+      "displayName": "Windows (MinGW-w64)",
+      "description": "Configuración para MinGW-w64",
+      "generator": "MinGW Makefiles",
+      "binaryDir": "${sourceDir}/build/win", 
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_C_COMPILER": "gcc",
+        "CMAKE_CXX_COMPILER": "g++"
+      }
+    },
+    {
+      "name": "linux-wsl",
+      "displayName": "Linux (WSL GCC)",
+      "description": "Configuración para GCC/G++ en WSL",
+      "generator": "Unix Makefiles", 
+      "binaryDir": "${sourceDir}/build/linux",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_C_COMPILER": "gcc",
+        "CMAKE_CXX_COMPILER": "g++"
+      }
+    },
+    { 
+      "name": "linux-arm64-wsl",
+      "displayName": "Linux Cross-Compile (ARM64/aarch64)",
+      "description": "Compilación cruzada para Linux ARM64 (aarch64)",
+      "generator": "Unix Makefiles",
+      "binaryDir": "${sourceDir}/build/arm64", 
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_TOOLCHAIN_FILE": "${sourceDir}/arm-aarch64.cmake"
+      }
+    }
+    
+  ],
+  "buildPresets": [
+    {
+      "name": "windows-mingw-build",
+      "configurePreset": "windows-mingw"
+    },
+    {
+      "name": "linux-wsl-build",
+      "configurePreset": "linux-wsl"
+    },
+    {
+      "name": "linux-arm64-wsl-build",
+      "configurePreset": "linux-arm64-wsl"
+    }
+  ]
+}

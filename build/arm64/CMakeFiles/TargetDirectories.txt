@@ -1,0 +1,3 @@
+/mnt/c/Users/alvar/Documents/VSCODE/helloworld/build/arm64/CMakeFiles/helloworld_app.dir
+/mnt/c/Users/alvar/Documents/VSCODE/helloworld/build/arm64/CMakeFiles/edit_cache.dir
+/mnt/c/Users/alvar/Documents/VSCODE/helloworld/build/arm64/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,1 @@
+/usr/bin/aarch64-linux-gnu-g++ -g CMakeFiles/helloworld_app.dir/src/main.cpp.o CMakeFiles/helloworld_app.dir/src/util.cpp.o -o helloworld_app 

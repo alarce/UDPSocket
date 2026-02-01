@@ -1,0 +1,4 @@
+C:/Users/alvar/Documents/VSCODE/socketComms/build/win/CMakeFiles/server.dir
+C:/Users/alvar/Documents/VSCODE/socketComms/build/win/CMakeFiles/client.dir
+C:/Users/alvar/Documents/VSCODE/socketComms/build/win/CMakeFiles/edit_cache.dir
+C:/Users/alvar/Documents/VSCODE/socketComms/build/win/CMakeFiles/rebuild_cache.dir

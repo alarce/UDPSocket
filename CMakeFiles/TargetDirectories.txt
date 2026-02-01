@@ -1,0 +1,4 @@
+/mnt/c/Users/alvar/Documents/VSCODE/socketUDPComms/CMakeFiles/server.dir
+/mnt/c/Users/alvar/Documents/VSCODE/socketUDPComms/CMakeFiles/client.dir
+/mnt/c/Users/alvar/Documents/VSCODE/socketUDPComms/CMakeFiles/edit_cache.dir
+/mnt/c/Users/alvar/Documents/VSCODE/socketUDPComms/CMakeFiles/rebuild_cache.dir
